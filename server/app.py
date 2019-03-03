@@ -70,8 +70,6 @@ def confirm_user(name):
 
 @app.route('/api/v1/update/', methods=['POST'])
 def update_macs():
-    print('hit api')
-    print(request)
     json_object = request.get_json()
     #json_object = json.loads(data)
     print(json_object)
