@@ -72,8 +72,8 @@ def confirm_user(name):
 def update_macs():
     json_object = request.get_json()
     #json_object = json.loads(data)
-    print(json_object)
-    print('macs:' + str(json_object['macs']))
+    for mac in json_object['macs']:
+        print(mac)
     for res in Resident.query.all():
         res.is_home = False
         db.session.commit()
