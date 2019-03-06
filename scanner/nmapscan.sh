@@ -13,5 +13,5 @@ curl --header "Content-type: application/json"\
        --request POST \
        --data "@macs.json" \
        --url $WH_UPDATE_ENDPOINT
-
+sleep 10s
 done
